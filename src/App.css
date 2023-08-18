@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 7px 16px 7px 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.status .mob-info {
+    display: flex;
+    align-items: center;
+    height: 11px;
+    padding: 0px 1px 0px 1px;
+    gap: 8px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px 0 15px;
+    background-color: #ffffff
 }
 
-.App-link {
-  color: #61dafb;
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-header .menu-bg{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    padding: 10px;
+    background-color: #F2F8FE;
+    position: relative;
+}
+
+.menu-bg > img{
+    width: 22.5px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.left-header h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1C4980;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    padding: 10px;
 }
